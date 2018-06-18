@@ -31,15 +31,14 @@ If need to install it, run :
 # Installation of dependency
 npm i -g relaxedjs
 ```
-Then, for each template you want to use :
+Then simply run the script
 
 ``` bash
-# Generating cv with Modern template
-cd ./Modern
-relaxed cv.pug --build-once
+# Generating CVs
+./generate.sh
 ```
 
-This will generate your cv as `cv.pdf` in the current directory. Enjoy !
+This will generate a 'PDFs' directory containing all your generated CVs, Enjoy !
 
 ### Make it you own
 
