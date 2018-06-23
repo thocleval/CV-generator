@@ -12,6 +12,9 @@ Dynamically generate CVs using various templates.
 ### Gradient
 ![alt text](Previews/cv-gradient.png)
 
+### Article
+![alt text](Previews/article-cv.png)
+
 ### Add yours ?
 
 ****

@@ -1,0 +1,65 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
+@import url('https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css');
+@import '../../dist/icons.css';
+@import 'customisation';
+$total-page-width: 210mm;
+$total-page-height: 297mm;
+$page-padding: 1rem;
+
+@page {
+  size: $total-page-width $total-page-height;
+  -relaxed-page-width: $total-page-width;
+  -relaxed-page-height: $total-page-height;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  width: $total-page-width;
+  height: $total-page-height;
+  padding: $page-padding;
+  font-family: $custom-serif;
+}
+
+h1, h2 , h3, ul, p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.ud{
+
+    box-shadow: inset 0 -.7em 0 $primary-color;
+}
+
+.ud--thin{
+    box-shadow: inset 0 -0.45em 0 $primary-color;
+}
+
+.ff-s{
+    font-family: $custom-serif;
+}
+
+.ff-ss{
+    font-family: $custom-sans-serif;
+}
+
+.i {
+    font-style: italic;
+}
+
+a{
+	color: unset;
+	text-decoration: none;
+	@extend .ud--thin;
+}
+
+strong{
+    box-shadow: inset 0 -1em 0 $primary-color;
+    font-weight: normal;
+}
