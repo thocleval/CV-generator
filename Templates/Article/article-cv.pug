@@ -1,0 +1,34 @@
+include mixins.pug
+
+.flex.mb4
+    .flex-grow-1.flex.flex-column
+        include ../../content/title.pug
+        .flex-grow-1
+        include ../../content/intro.pug
+        .flex-grow-1
+
+    .w-100.flex.flex-column.bt.bw4.p2.ml5
+        .pa2.bb.b--moon-gray
+            h2.ttu.tc Contact
+        include ../../content/contact.pug
+
+.flex.mb4
+    .w-80.flex.flex-column.bt.bw4.p2
+        .pa2.bb.b--moon-gray
+            h2.ttu.tc Compétences
+        include ../../content/skills.pug
+    .flex-grow-1.ml3
+        h2.ttu.mb3.bb.b--moon-gray Expériences
+        include ../../content/experiences.pug
+        
+.flex
+    .flex-grow-1
+        h2.ttu.mb3.bb.b--moon-gray Formations
+        include ../../content/education.pug
+    .w-40.flex.flex-column.bt.bw4.p2.ml3
+        .pa2.bb.b--moon-gray
+            h2.ttu.tc Centres d'intérêt
+        include ../../content/hobbies.pug
+
+style
+    include:scss cv.scss

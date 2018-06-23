@@ -1,0 +1,44 @@
+mixin title(name, job_title)
+    h1.f1.ff-ss= name
+    h1.f1.ud.ff-ss= job_title
+    
+mixin intro(...sections)
+    each section in sections
+      p.i!= section
+    
+mixin contact-item(name, value)
+    .flex.pv2.bb.b--moon-gray.mh2
+        i.icon(class="icon-"+name).f4.mr2
+        span!= value
+
+mixin skill-section(title, ...items)
+    h3.pa2.ttc.ff-ss= title
+    ul.pb1.bb.b--moon-gray.mh2
+        each item in items
+            li.mb2.ml4= item
+
+mixin experiences-item(from_date, to_date, title, place, city, description, ...details)
+    .flex.mt2.mb1.items-center
+        h3.f3.ttc.fw6.ff-ss.w-80= title
+        span.f6.fw3.flex-shrink-0.ml2
+            if (from_date && !to_date)
+                = "[ " + from_date + " ]"
+            if (from_date && to_date)
+                = "[ " + from_date + " ‑ " + to_date + " ]"
+    p.f5.i 
+        if place
+            = place
+        if city
+            = " ‑ " + city
+    p.f5= description
+    each detail in details
+        p.f5!= detail
+        
+mixin education-item(from_date, to_date, title, place, city, description, ...details)
+    +experiences-item(from_date, to_date, title, place, city, description, ...details)
+
+
+mixin hobbies-item(name, value)
+    .flex.pv2.bb.b--moon-gray.mh2.items-center
+        i.icon(class="icon-"+name).f3.mr3
+        span!= value
