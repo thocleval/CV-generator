@@ -7,13 +7,13 @@ Dynamically generate CVs using various templates.
 ## Templates
 
 ### Modern
-![alt text](Previews/cv-modern.png)
+![alt text](Previews/modern-mockup.png)
 
 ### Gradient
-![alt text](Previews/cv-gradient.png)
+![alt text](Previews/gradient-mockup.png)
 
 ### Article
-![alt text](Previews/article-cv.png)
+![alt text](Previews/article-mockup.png)
 
 ### Add yours ?
 
