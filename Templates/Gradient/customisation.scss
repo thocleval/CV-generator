@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
-body{
-    font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+body {
+  font-family: "Open Sans";
+  font-weight: 300;
 }
 
-h1, h2, h3{
-    font-family: "Montserrat", sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
 }
 
-$gradient-background: linear-gradient(to bottom right,#ff4136,#1800ff);
+$gradient-background: linear-gradient(to bottom right, #ff4136, #1800ff);

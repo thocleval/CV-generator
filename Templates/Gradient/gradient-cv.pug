@@ -7,19 +7,21 @@ include mixins.pug
     #content
 
         .margin-left
+        #intro
+            include ../../content/intro.pug
 
         #timelines
             .title-wrapper
                 .angle
                 .separator
-                h2 Expériences
+                h2 Experience
 
             include ../../content/experiences.pug
 
             .title-wrapper
                 .angle
                 .separator
-                h2 Formations
+                h2 Education
 
             include ../../content/education.pug
 
@@ -33,16 +35,11 @@ include mixins.pug
             #contact-items
                 include ../../content/contact.pug
             .title-wrapper 
-                h2 Compétences
+                h2 Skills
                 .separator
             #skills-items
                 include ../../content/skills.pug
-            .title-wrapper 
-                h2 Centres d'intérêt
-                .separator
-            #hobbies-items
-                include ../../content/hobbies.pug
-            //- .filler
+            .filler
         .margin-right
 
 style

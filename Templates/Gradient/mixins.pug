@@ -3,6 +3,10 @@ mixin title(name, job_title)
     #clip 
         h1= job_title
 
+mixin intro(intro)
+    p 
+        = intro
+
 mixin experiences-item(from_date, to_date, title, place, city, description, ...details)
     .timeline-item
         .timeline-graphics
@@ -10,13 +14,13 @@ mixin experiences-item(from_date, to_date, title, place, city, description, ...d
             .circle
             .line-long
         .timeline-content
-            .date 
-                if from_date
-                    = from_date
-                if to_date
-                    = " - " + to_date
             .title= title
-            .place= place + " - " + city
+                .date 
+                    if from_date
+                        = ' ' + from_date
+                    if to_date
+                        = " - " + to_date
+            .place= city + " - " + place
             if description
                 p.description= description
             if details
@@ -31,13 +35,14 @@ mixin education-item(from_date, to_date, title, place, city, description, ...det
             .circle
             .line-long
         .timeline-content
-            .date 
-                if from_date
-                    = from_date
-                if to_date
-                    = " - " + to_date
             .title= title
-            .place= place + " - " + city
+                .date 
+                    if from_date
+                        = ' ' + from_date
+                    if to_date
+                        = " - " + to_date
+            if place
+                .place= place + " - " + city
             if description
                 p.description= description
             if details
